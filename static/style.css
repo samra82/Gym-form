@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f3f4f7; /* Soft light background */
+    color: #333; /* Dark text for better readability */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Navigation */
+nav{
+    background-color: #FAFAFA;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-direction: row;
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF6600; 
+}
+
+/* Form Container */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003366; /* Primary color */
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+/* Form */
+form {
+    background-color: #FAFAFA;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #212121;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #FF6600; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color:#003366; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+    
+}
